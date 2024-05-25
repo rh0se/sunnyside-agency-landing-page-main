@@ -1,0 +1,135 @@
+$Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+$Verydarkgrayishblue: hsl(213, 9%, 39%);
+$Darkgrayishblue: hsl(232, 10%, 55%);
+$Grayishblue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+$Softred: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Darkdesaturatedcyan: hsl(167, 40%, 24%);
+$Darkblue: hsl(198, 62%, 26%);
+$Darkmoderatecyan: hsl(168, 34%, 41%);
+
+* , ::before , *::after {
+    box-sizing: border-box;
+}
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* prevent iOS font size change */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body { 
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1;
+    text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3, h4 {
+    font-weight: inherit;
+}
+
+
+ul {
+    list-style: none;
+}
+
+input, button {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: inherit;
+}
+
+button {
+    text-align: inherit;
+    font: inherit;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    overflow: auto;
+}
+
+
+header {
+    position: relative;
+    .logo-hamburger, .arrow, h1 {
+        position: absolute;
+    }
+    .logo-hamburger {
+        display: flex;
+        width: 87%;
+        align-items: center;
+        justify-content: space-between;
+        top: 32px;
+        left: 6%;
+      /*   margin: 32px 24px 0; */
+        .logo-icon {
+            width: 123.64px;
+            height: 24px;
+        }
+        .hamburger-icon {
+            width: 24px;
+            height: 18px;
+            top: 35px;
+            left: 327px;
+            gap: 0px;
+            opacity: 0px;
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        width: min(327px, 99%);
+        height: 98px;
+        top: 144px;
+        left: 50%;
+transform: translateX(-50%);
+        text-transform: uppercase;
+        font-family: "Fraunces";
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 49.32px;
+        letter-spacing: 6.25px;
+        text-align: center;
+        font-variation-settings:
+        "SOFT" 9,
+        "WONK" 0;
+        color: $White;
+    }
+   
+    
+    .arrow {
+        width: 30px;
+        height: 107.48px;
+        top: 299px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

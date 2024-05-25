@@ -1,6 +1,114 @@
+*, ::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* prevent iOS font size change */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3, h4 {
+  font-weight: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+input, button {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: inherit;
+}
+
+button {
+  text-align: inherit;
+  font: inherit;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  overflow: auto;
+}
+
+header {
+  position: relative;
+}
+header .logo-hamburger, header .arrow, header h1 {
+  position: absolute;
+}
+header .logo-hamburger {
+  display: flex;
+  width: 87%;
+  align-items: center;
+  justify-content: space-between;
+  top: 32px;
+  left: 6%;
+  /*   margin: 32px 24px 0; */
+}
+header .logo-hamburger .logo-icon {
+  width: 123.64px;
+  height: 24px;
+}
+header .logo-hamburger .hamburger-icon {
+  width: 24px;
+  height: 18px;
+  top: 35px;
+  left: 327px;
+  gap: 0px;
+  opacity: 0px;
+}
+header nav {
+  display: none;
+}
+header img {
+  width: 100%;
+}
+header h1 {
+  width: min(327px, 99%);
+  height: 98px;
+  top: 144px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 49.32px;
+  letter-spacing: 6.25px;
+  text-align: center;
+  font-variation-settings: "SOFT" 9, "WONK" 0;
+  color: hsl(0, 0%, 100%);
+}
+header .arrow {
+  width: 30px;
+  height: 107.48px;
+  top: 299px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .attribution {
   font-size: 11px;
-  text-align: center;
 }
 
 .attribution a {
