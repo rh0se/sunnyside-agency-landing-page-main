@@ -46,6 +46,10 @@ input, button {
 
 img {
     width: 100%;
+    vertical-align: top;
+}
+picture {
+    vertical-align: top;
 }
 
 a {
@@ -95,16 +99,19 @@ header {
     }
     img {
         width: 100%;
+        /* display: inline-block; */
+        
     }
 
     h1 {
-        width: min(327px, 99%);
+        width: 100%;
+       /*  width: min(327px, 99%); */
         height: 98px;
-        top: 144px;
-        left: 50%;
-transform: translateX(-50%);
+        top: /* 26.7% */144px;
+        /* left: 50%; for less than 650 remove width
+        transform: translateX(-50%); */
         text-transform: uppercase;
-        font-family: "Fraunces";
+        font-family: "Fraunces", serif;
         font-size: 40px;
         font-weight: 900;
         line-height: 49.32px;
@@ -120,9 +127,82 @@ transform: translateX(-50%);
     .arrow {
         width: 30px;
         height: 107.48px;
-        top: 299px;
+        top: /* 299px */54.7%;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+div.benefits-section {
+    display: grid;
+    article {
+        text-align: center;
+        margin: 64px 24px;
+        h2 {
+            color: $Verydarkdesaturatedblue;
+            font-family: "Fraunces";
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 39.46px;
+            letter-spacing: -0.22857142984867096px;
+        }
+        p {
+            color: rgba(128, 131, 151, 1);
+            margin: 24px auto 32px;
+            font-family: "Barlow", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 30px;
+            letter-spacing: -0.12857143580913544px;
+        }
+        div.link-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 32px auto 0;
+            height: 25px;
+            text-align: center;
+            position: relative;
+            a {
+                text-transform: uppercase;
+                color: rgba(36, 48, 62, 1);
+                font-family: "Fraunces", serif;
+                font-size: 15px;
+                font-weight: 900;
+                line-height: 25px;
+                letter-spacing: 1px;
+                width: 120px;
+                height: 25px;
+                left: 8px;
+                gap: 0px;
+                opacity: 0px;
+
+            }
+            p {
+                position: absolute;
+                margin: 0;
+                width: 137px;
+                height: 10px;
+                gap: 0px;
+                top: 15px;
+                opacity: 25%;
+                border-radius: 100px;
+                visibility: hidden;
+            }
+            p.transform-hover {
+                background-color: $Yellow;
+            }
+            p.standout-hover {
+                background-color: $Softred;
+            }
+            a:hover + p {
+                visibility: visible;
+            }
+
+        }
+        
+      
     }
 }
 

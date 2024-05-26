@@ -34,6 +34,11 @@ input, button {
 
 img {
   width: 100%;
+  vertical-align: top;
+}
+
+picture {
+  vertical-align: top;
 }
 
 a {
@@ -82,15 +87,17 @@ header nav {
 }
 header img {
   width: 100%;
+  /* display: inline-block; */
 }
 header h1 {
-  width: min(327px, 99%);
+  width: 100%;
+  /*  width: min(327px, 99%); */
   height: 98px;
   top: 144px;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%; for less than 650 remove width
+  transform: translateX(-50%); */
   text-transform: uppercase;
-  font-family: "Fraunces";
+  font-family: "Fraunces", serif;
   font-size: 40px;
   font-weight: 900;
   line-height: 49.32px;
@@ -102,9 +109,78 @@ header h1 {
 header .arrow {
   width: 30px;
   height: 107.48px;
-  top: 299px;
+  top: 54.7%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+div.benefits-section {
+  display: grid;
+}
+div.benefits-section article {
+  text-align: center;
+  margin: 64px 24px;
+}
+div.benefits-section article h2 {
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces";
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 39.46px;
+  letter-spacing: -0.2285714298px;
+}
+div.benefits-section article p {
+  color: rgb(128, 131, 151);
+  margin: 24px auto 32px;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.1285714358px;
+}
+div.benefits-section article div.link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto 0;
+  height: 25px;
+  text-align: center;
+  position: relative;
+}
+div.benefits-section article div.link-container a {
+  text-transform: uppercase;
+  color: rgb(36, 48, 62);
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1px;
+  width: 120px;
+  height: 25px;
+  left: 8px;
+  gap: 0px;
+  opacity: 0px;
+}
+div.benefits-section article div.link-container p {
+  position: absolute;
+  margin: 0;
+  width: 137px;
+  height: 10px;
+  gap: 0px;
+  top: 15px;
+  opacity: 25%;
+  border-radius: 100px;
+  visibility: hidden;
+}
+div.benefits-section article div.link-container p.transform-hover {
+  background-color: hsl(51, 100%, 49%);
+}
+div.benefits-section article div.link-container p.standout-hover {
+  background-color: hsl(7, 99%, 70%);
+}
+div.benefits-section article div.link-container a:hover + p {
+  visibility: visible;
 }
 
 .attribution {
