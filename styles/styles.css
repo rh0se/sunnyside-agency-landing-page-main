@@ -132,7 +132,7 @@ div.benefits-section article h2 {
 div.benefits-section article p {
   color: rgb(128, 131, 151);
   margin: 24px auto 32px;
-  font-family: "Barlow", sans-serif;
+  font-family: Barlow, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 30px;
@@ -181,6 +181,42 @@ div.benefits-section article div.link-container p.standout-hover {
 }
 div.benefits-section article div.link-container a:hover + p {
   visibility: visible;
+}
+
+section.service {
+  position: relative;
+}
+section.service article {
+  position: absolute;
+  /* width: 327px;
+  height: 143px; */
+  top: 66%;
+  gap: 0px;
+  opacity: 0px;
+  padding: 0 6.4%;
+}
+section.service article h2 {
+  font-family: Fraunces;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 34.52px;
+  letter-spacing: -0.200000003px;
+  text-align: center;
+}
+section.service article p {
+  margin-top: 27px;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: -0.1142857149px;
+  text-align: center;
+}
+section.service article.graphic-article {
+  color: hsl(167, 40%, 24%);
+}
+section.service article.photography-article {
+  color: hsl(198, 62%, 26%);
 }
 
 .attribution {

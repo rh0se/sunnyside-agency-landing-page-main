@@ -149,7 +149,7 @@ div.benefits-section {
         p {
             color: rgba(128, 131, 151, 1);
             margin: 24px auto 32px;
-            font-family: "Barlow", sans-serif;
+            font-family: Barlow, sans-serif;
             font-size: 18px;
             font-weight: 600;
             line-height: 30px;
@@ -203,6 +203,41 @@ div.benefits-section {
         }
         
       
+    }
+}
+
+section.service {
+    position: relative;
+    article {
+        position: absolute;
+        /* width: 327px;
+        height: 143px; */
+        top: 66%;
+        gap: 0px;
+        opacity: 0px;
+        padding: 0 6.4%;
+        h2 {
+            font-family: Fraunces;
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 34.52px;
+            letter-spacing: -0.20000000298023224px;text-align: center;
+        } 
+        p {
+            margin-top: 27px;
+            font-family: Barlow;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: -0.11428571492433548px;
+            text-align: center;
+        }
+    }
+    article.graphic-article {
+        color: $Darkdesaturatedcyan;
+    }
+    article.photography-article {
+        color: $Darkblue;
     }
 }
 
