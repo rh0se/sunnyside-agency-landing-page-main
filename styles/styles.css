@@ -219,6 +219,86 @@ section.service article.photography-article {
   color: hsl(198, 62%, 26%);
 }
 
+section.testimonials-section {
+  color: hsl(210, 4%, 67%);
+  margin-bottom: 86px;
+}
+section.testimonials-section h2 {
+  text-transform: uppercase;
+  font-family: Fraunces;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 19.73px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 64px 0;
+}
+section.testimonials-section div.testimonials-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+section.testimonials-section div.testimonials-container article {
+  text-align: center;
+}
+section.testimonials-section div.testimonials-container article picture img {
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+}
+section.testimonials-section div.testimonials-container article p {
+  margin: 32px 24px;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.1285714358px;
+  text-align: center;
+  color: hsl(212, 27%, 19%);
+}
+section.testimonials-section div.testimonials-container article div.client-info h3 {
+  font-family: Fraunces, serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22.19px;
+  letter-spacing: -0.1285714358px;
+  color: hsl(212, 27%, 19%);
+}
+section.testimonials-section div.testimonials-container article div.client-info p {
+  margin-top: 9px;
+  color: hsl(210, 4%, 67%);
+  font-family: Barlow;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.1000000015px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+footer div.footer-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+footer div.footer-content {
+  background-color: hsl(168, 44%, 70%);
+  color: hsl(168, 34%, 41%);
+  padding: 64px 39px;
+}
+footer div.footer-content picture {
+  width: 170px;
+  margin: 0 96px;
+}
+footer div.footer-content picture svg {
+  width: 170px;
+  height: 33px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .attribution {
   font-size: 11px;
 }

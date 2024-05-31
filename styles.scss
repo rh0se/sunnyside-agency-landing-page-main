@@ -1,5 +1,5 @@
 $Verydarkdesaturatedblue: hsl(212, 27%, 19%);
-$Verydarkgrayishblue: hsl(213, 9%, 39%);
+$Verydarkgrayishblue: hsl(213, 9%, 39%, 1);
 $Darkgrayishblue: hsl(232, 10%, 55%);
 $Grayishblue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
@@ -238,6 +238,91 @@ section.service {
     }
     article.photography-article {
         color: $Darkblue;
+    }
+}
+
+section.testimonials-section {
+    color: $Grayishblue;
+    margin-bottom: 86px;
+        h2 {
+            text-transform: uppercase;
+            font-family: Fraunces;
+            font-size: 16px;
+            font-weight: 900;
+            line-height: 19.73px;
+            letter-spacing: 4px;
+            text-align: center;
+            margin: 64px 0;
+    }
+    div.testimonials-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 64px;
+        article {
+            text-align: center;
+            picture {
+                img {
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 100%;
+                }
+            } 
+            p {
+                margin: 32px 24px;
+                font-family: Barlow;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: -0.12857143580913544px;
+                text-align: center;
+                color: $Verydarkdesaturatedblue;
+            }
+            div.client-info {
+                h3 {
+                    font-family: Fraunces, serif;
+                    font-size: 18px;
+                    font-weight: 900;
+                    line-height: 22.19px;
+                    letter-spacing: -0.12857143580913544px;
+                    color: $Verydarkdesaturatedblue;
+                }
+                p {
+                    margin-top: 9px;
+                    color: $Grayishblue;
+                    font-family: Barlow;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    letter-spacing: -0.10000000149011612px;
+                    text-align: center;
+    
+                }
+    
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    div.footer-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    div.footer-content {
+        background-color: hsla(168, 44%, 70%, 1);
+        color: $Darkmoderatecyan;
+        padding: 64px 39px;
+        picture {
+            width: 170px;
+            margin: 0 96px;
+            svg {
+               width: 170px;
+               height: 33px;
+               object-fit: cover;
+            }
+        }
     }
 }
 
