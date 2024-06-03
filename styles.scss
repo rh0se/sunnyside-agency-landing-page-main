@@ -315,12 +315,42 @@ footer {
         color: $Darkmoderatecyan;
         padding: 64px 39px;
         picture {
-            width: 170px;
-            margin: 0 96px;
-            svg {
+            img {
+                filter: invert(38%) sepia(60%) saturate(368%) hue-rotate(118deg) brightness(65%) contrast(95%);
                width: 170px;
                height: 33px;
                object-fit: cover;
+            }
+        }
+        ul.links {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li.link-item {
+                font-family: Barlow;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 25px;
+                letter-spacing: -0.12857143580913544px;
+                text-align: left;
+                color: hsla(167, 34%, 41%, 1);
+            }
+        }
+        ul.social-links {
+            margin: 88px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+            li.social-item {
+                a {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
             }
         }
     }
@@ -329,7 +359,8 @@ footer {
 
 .attribution { 
     font-size: 11px; 
+    background-color: hsla(168, 44%, 70%, 1);
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsla(167, 34%, 41%, 1); 
 }

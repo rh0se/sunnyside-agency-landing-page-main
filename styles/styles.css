@@ -288,21 +288,45 @@ footer div.footer-content {
   color: hsl(168, 34%, 41%);
   padding: 64px 39px;
 }
-footer div.footer-content picture {
-  width: 170px;
-  margin: 0 96px;
-}
-footer div.footer-content picture svg {
+footer div.footer-content picture img {
+  filter: invert(38%) sepia(60%) saturate(368%) hue-rotate(118deg) brightness(65%) contrast(95%);
   width: 170px;
   height: 33px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+footer div.footer-content ul.links {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer div.footer-content ul.links li.link-item {
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.1285714358px;
+  text-align: left;
+  color: hsl(167, 34%, 41%);
+}
+footer div.footer-content ul.social-links {
+  margin: 88px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+footer div.footer-content ul.social-links li.social-item a img {
+  width: 20px;
+  height: 20px;
+}
 
 .attribution {
   font-size: 11px;
+  background-color: hsl(168, 44%, 70%);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(167, 34%, 41%);
 }/*# sourceMappingURL=styles.css.map */
