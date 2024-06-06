@@ -304,6 +304,7 @@ section.testimonials-section {
 }
 
 footer {
+    background-color: hsla(168, 44%, 70%, 1);
     text-align: center;
     div.footer-gallery {
         display: grid;
@@ -311,9 +312,10 @@ footer {
         grid-template-rows: auto auto;
     }
     div.footer-content {
-        background-color: hsla(168, 44%, 70%, 1);
         color: $Darkmoderatecyan;
-        padding: 64px 39px;
+        max-width: 297px;
+        margin: 0 auto 00;
+        padding: 64px 0; 
         picture {
             img {
                 filter: invert(38%) sepia(60%) saturate(368%) hue-rotate(118deg) brightness(65%) contrast(95%);
@@ -363,6 +365,14 @@ footer {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: auto;
         }
+        div.footer-content {
+            width: 297px;
+            margin: 0 auto;
+            padding: 72px 0;
+        }
+    }
+    section.testimonials-section {
+        
     }
    
 }

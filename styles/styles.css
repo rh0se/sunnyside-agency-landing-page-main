@@ -276,6 +276,7 @@ section.testimonials-section div.testimonials-container article div.client-info 
 }
 
 footer {
+  background-color: hsl(168, 44%, 70%);
   text-align: center;
 }
 footer div.footer-gallery {
@@ -284,9 +285,10 @@ footer div.footer-gallery {
   grid-template-rows: auto auto;
 }
 footer div.footer-content {
-  background-color: hsl(168, 44%, 70%);
   color: hsl(168, 34%, 41%);
-  padding: 64px 39px;
+  max-width: 297px;
+  margin: 0 auto 0;
+  padding: 64px 0;
 }
 footer div.footer-content picture img {
   filter: invert(38%) sepia(60%) saturate(368%) hue-rotate(118deg) brightness(65%) contrast(95%);
@@ -327,6 +329,11 @@ footer div.footer-content ul.social-links li.social-item a img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+  }
+  footer div.footer-content {
+    width: 297px;
+    margin: 0 auto;
+    padding: 72px 0;
   }
 }
 .attribution {
