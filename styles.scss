@@ -1,5 +1,5 @@
 $Verydarkdesaturatedblue: hsl(212, 27%, 19%);
-$Verydarkgrayishblue: hsl(213, 9%, 39%, 1);
+$Verydarkgrayishblue: hsla(213, 9%, 39%, 1);
 $Darkgrayishblue: hsl(232, 10%, 55%);
 $Grayishblue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
@@ -252,7 +252,7 @@ section.testimonials-section {
             line-height: 19.73px;
             letter-spacing: 4px;
             text-align: center;
-            margin: 64px 0;
+            margin: 64px auto;
     }
     div.testimonials-container {
         display: grid;
@@ -275,7 +275,7 @@ section.testimonials-section {
                 line-height: 32px;
                 letter-spacing: -0.12857143580913544px;
                 text-align: center;
-                color: $Verydarkdesaturatedblue;
+                color: $Verydarkgrayishblue;
             }
             div.client-info {
                 h3 {
@@ -372,7 +372,26 @@ footer {
         }
     }
     section.testimonials-section {
-        
+        h2 {
+            margin: 160px auto 106px;
+        }
+        div.testimonials-container {
+           /*  grid-template-columns: repeat(3, minmax(0, 350px)); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            max-width: 1110px;
+            margin: 0 auto;
+            article {
+                max-width: 350px;
+                p {
+                    margin: 58px auto 69px;
+                   
+                }
+            }
+        }
     }
    
 }
