@@ -372,6 +372,64 @@ footer div.footer-content ul.social-links li.social-item a img {
     max-width: 339px;
     margin: 27px auto 0;
   }
+  div.benefits-section div.benefit-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  div.benefits-section div.benefit-item picture {
+    flex: 1;
+    min-width: 500px;
+  }
+  div.benefits-section div.benefit-item article {
+    flex: 1;
+    width: max(50%, 445px);
+    text-align: left;
+    margin: 0 auto 10px;
+    /*   height: 285px; */
+  }
+  div.benefits-section div.benefit-item article h2 {
+    margin: auto;
+    width: 445px;
+    font-family: Fraunces 9pt Soft;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 49.32px;
+    letter-spacing: -0.2857142985px;
+    text-align: left;
+  }
+  div.benefits-section div.benefit-item article p.benefit-paragraph {
+    margin: 24px auto 48px;
+    width: 445px;
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.1285714358px;
+    text-align: left;
+  }
+  div.benefits-section div.benefit-item article div.link-container {
+    width: 445px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  div.benefits-section div.benefit-item article div.link-container a, div.benefits-section div.benefit-item article div.link-container p {
+    width: 137px;
+  }
+  div.benefits-section div.first-benefit {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (768px <= width <= 1000px) {
+  div.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .attribution {
   font-size: 11px;

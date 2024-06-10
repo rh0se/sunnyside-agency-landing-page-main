@@ -360,6 +360,7 @@ footer {
     
 }
 
+
 @media screen and (min-width: 768px) {
     footer {
         div.footer-gallery {
@@ -414,7 +415,69 @@ footer {
             }
         }
     }
-   
+    div.benefits-section {
+        div.benefit-item {
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction: row;
+            align-items: center;
+            picture{
+                flex: 1;
+                min-width: 500px;
+            }
+            article {
+                flex:1;
+                width: max(50%,445px);
+                text-align:left;
+                margin: 0 auto 10px;
+              /*   height: 285px; */
+                h2 {
+                    margin: auto;
+                    width: 445px;
+                    font-family: Fraunces 9pt Soft;
+                    font-size: 40px;
+                    font-weight: 900;
+                    line-height: 49.32px;
+                    letter-spacing: -0.2857142984867096px;
+                    text-align: left;
+
+                }
+                p.benefit-paragraph {
+                    margin: 24px auto 48px;
+                    width: 445px;
+                    font-family: Barlow;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    letter-spacing: -0.12857143580913544px;
+                    text-align: left;
+                }
+                div.link-container {
+                    width: 445px;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    a, p{
+                        width: 137px
+                    }
+                   
+                }
+            }
+        }
+        div.first-benefit {
+            flex-direction: row-reverse;
+        }
+
+    }
+}
+@media screen and (768px <= width <= 1000px) {
+    div.benefit-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
