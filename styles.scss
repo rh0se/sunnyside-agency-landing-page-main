@@ -221,7 +221,8 @@ section.service {
             font-size: 28px;
             font-weight: 900;
             line-height: 34.52px;
-            letter-spacing: -0.20000000298023224px;text-align: center;
+            letter-spacing: -0.20000000298023224px;
+            text-align: center;
         } 
         p {
             margin-top: 27px;
@@ -406,6 +407,11 @@ footer {
             padding: 0;
             width: 100%;
             text-align: center;
+            margin: 2px auto 0;
+            p {
+                max-width: 339px;
+                margin: 27px auto 0;
+            }
         }
     }
    
