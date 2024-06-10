@@ -354,6 +354,19 @@ footer div.footer-content ul.social-links li.social-item a img {
   section.testimonials-section div.testimonials-container article p {
     margin: 58px auto 69px;
   }
+  div.services-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.service {
+    min-width: 500px;
+    flex: 1;
+  }
+  section.service article {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 .attribution {
   font-size: 11px;

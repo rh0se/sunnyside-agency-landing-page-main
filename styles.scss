@@ -356,6 +356,7 @@ footer {
             }
         }
     }
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -391,6 +392,20 @@ footer {
                    
                 }
             }
+        }
+    }
+    div.services-container {
+        display: flex;
+        flex-wrap: wrap; 
+        
+    }
+    section.service {
+        min-width: 500px;
+        flex: 1; 
+        article {
+            padding: 0;
+            width: 100%;
+            text-align: center;
         }
     }
    
