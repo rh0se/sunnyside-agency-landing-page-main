@@ -312,6 +312,10 @@ footer div.footer-content ul.links li.link-item {
   text-align: left;
   color: hsl(167, 34%, 41%);
 }
+footer div.footer-content ul.links li:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
 footer div.footer-content ul.social-links {
   margin: 88px 0 0;
   display: flex;
@@ -322,6 +326,9 @@ footer div.footer-content ul.social-links {
 footer div.footer-content ul.social-links li.social-item a img {
   width: 20px;
   height: 20px;
+}
+footer div.footer-content ul.social-links li:hover {
+  filter: brightness(0) invert(1);
 }
 
 @media screen and (min-width: 768px) {
@@ -443,6 +450,7 @@ footer div.footer-content ul.social-links li.social-item a img {
   header div.logo-hamburger nav ul {
     display: flex;
     gap: 70px;
+    align-items: center;
   }
   header div.logo-hamburger nav ul li {
     font-family: Barlow;
@@ -452,6 +460,25 @@ footer div.footer-content ul.social-links li.social-item a img {
     letter-spacing: -0.1285714358px;
     text-align: left;
     color: hsl(0, 0%, 100%);
+  }
+  header div.logo-hamburger nav ul li:nth-child(4) {
+    font-family: Fraunces;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 100px;
+    padding: 16px 32px;
+    color: hsl(212, 27%, 19%);
+    text-align: center;
+  }
+  header div.logo-hamburger nav ul li:nth-child(4):hover {
+    background-color: hsla(0, 0%, 100%, 0.3);
+    color: hsl(0, 0%, 100%);
+  }
+  header div.logo-hamburger nav ul li:hover {
+    cursor: pointer;
+    color: hsl(212, 27%, 19%);
   }
   header h1 {
     height: 69px;
@@ -486,10 +513,19 @@ footer div.footer-content ul.social-links li.social-item a img {
   }
 }
 .attribution {
+  font-family: Fraunces;
   font-size: 11px;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
   background-color: hsl(168, 44%, 70%);
+  text-align: center;
 }
 
 .attribution a {
+  font-weight: 700;
   color: hsl(167, 34%, 41%);
+}
+
+.attribution a:hover {
+  color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=styles.css.map */
