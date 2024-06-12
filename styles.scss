@@ -69,6 +69,7 @@ button {
 
 header {
     position: relative;
+    
     .logo-hamburger, .arrow, h1 {
         position: absolute;
     }
@@ -97,6 +98,7 @@ header {
     nav {
         display: none;
     }
+
     img {
         width: 100%;
         /* display: inline-block; */
@@ -106,7 +108,7 @@ header {
     h1 {
         width: 100%;
        /*  width: min(327px, 99%); */
-        height: 98px;
+        height: 58px;
         top: /* 26.7% */144px;
         /* left: 50%; for less than 650 remove width
         transform: translateX(-50%); */
@@ -471,12 +473,75 @@ footer {
         }
 
     }
+    header {
+        div.logo-hamburger {
+            width: 100%;
+            padding: 34px 40px;
+            justify-content: space-between;
+            top: 0;
+            left: 0;
+            img.hamburger-icon{
+                display:none;
+            }
+            .logo-icon {
+                width: 170px;
+                height: 33px;
+            }
+            nav {
+                display:inline-block;
+                
+                ul {
+                    display: flex;
+                    gap: 70px;
+                    li {
+                        font-family: Barlow;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 25px;
+                        letter-spacing: -0.12857143580913544px;
+                        text-align: left;  
+                        color: $White;                  
+                    }
+                }
+            }
+        }
+        h1 {
+            height:69px;
+            top:24.35%;
+            font-family: Fraunces;
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 69.05px;
+            letter-spacing: 8.75px;
+            text-align: center;
+        }
+        img.arrow {
+            width: 30px;
+            height: 107.48px;
+            top: 45%;
+
+
+        }
+        
+    }
 }
-@media screen and (768px <= width <= 1000px) {
-    div.benefit-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media screen and (600px <= width <= 768px) {
+    header {
+        h1 {
+            height:69px;
+            top:24.35%;
+            font-family: Fraunces;
+            font-weight: 900;
+            line-height: 69.05px;
+            letter-spacing: 8.75px;
+            text-align: center;
+        }
+        img.arrow {
+            width: 30px;
+            height: 107.48px;
+            top: 45%;
+        }
+        
     }
 }
 

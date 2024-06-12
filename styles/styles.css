@@ -92,7 +92,7 @@ header img {
 header h1 {
   width: 100%;
   /*  width: min(327px, 99%); */
-  height: 98px;
+  height: 58px;
   top: 144px;
   /* left: 50%; for less than 650 remove width
   transform: translateX(-50%); */
@@ -423,12 +423,66 @@ footer div.footer-content ul.social-links li.social-item a img {
   div.benefits-section div.first-benefit {
     flex-direction: row-reverse;
   }
-}
-@media screen and (768px <= width <= 1000px) {
-  div.benefit-item {
+  header div.logo-hamburger {
+    width: 100%;
+    padding: 34px 40px;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+  }
+  header div.logo-hamburger img.hamburger-icon {
+    display: none;
+  }
+  header div.logo-hamburger .logo-icon {
+    width: 170px;
+    height: 33px;
+  }
+  header div.logo-hamburger nav {
+    display: inline-block;
+  }
+  header div.logo-hamburger nav ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 70px;
+  }
+  header div.logo-hamburger nav ul li {
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.1285714358px;
+    text-align: left;
+    color: hsl(0, 0%, 100%);
+  }
+  header h1 {
+    height: 69px;
+    top: 24.35%;
+    font-family: Fraunces;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 69.05px;
+    letter-spacing: 8.75px;
+    text-align: center;
+  }
+  header img.arrow {
+    width: 30px;
+    height: 107.48px;
+    top: 45%;
+  }
+}
+@media screen and (600px <= width <= 768px) {
+  header h1 {
+    height: 69px;
+    top: 24.35%;
+    font-family: Fraunces;
+    font-weight: 900;
+    line-height: 69.05px;
+    letter-spacing: 8.75px;
+    text-align: center;
+  }
+  header img.arrow {
+    width: 30px;
+    height: 107.48px;
+    top: 45%;
   }
 }
 .attribution {
