@@ -56,9 +56,16 @@ button {
   text-align: inherit;
   font: inherit;
   border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: inherit;
   cursor: pointer;
   overflow: auto;
+}
+
+.show {
+  display: inline-block;
 }
 
 header {
@@ -93,8 +100,8 @@ header .logo-hamburger .hamburger-icon {
   opacity: 0px;
 }
 header nav {
-  display: none;
   position: relative;
+  display: none;
   width: 100%;
   /*  width: max(329px, 87%); */
   margin-top: 26px;
@@ -175,9 +182,6 @@ header .arrow {
   transform: translateX(-50%);
 }
 
-div.benefits-section {
-  display: grid;
-}
 div.benefits-section article {
   text-align: center;
   margin: 64px 24px;
@@ -588,6 +592,26 @@ footer div.footer-content ul.social-links li:hover {
     width: 30px;
     height: 107.48px;
     top: 45%;
+  }
+}
+@media screen and (max-width: 300px) {
+  * {
+    font-size: 12px;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  section.service article {
+    top: 15%;
+  }
+  section.service article p, section.service article h2 {
+    color: hsl(0, 0%, 100%);
+  }
+  .links, .social-links {
+    flex-direction: column;
+  }
+  div.benefits-section div article h2 {
+    font-size: 18px;
   }
 }
 .attribution {

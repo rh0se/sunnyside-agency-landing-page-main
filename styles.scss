@@ -66,9 +66,13 @@ button {
   text-align: inherit;
   font: inherit;
   border: none;
+  appearance: none;
   background-color: inherit;
   cursor: pointer;
   overflow: auto;
+}
+.show {
+    display: inline-block;
 }
 
 header {
@@ -104,8 +108,8 @@ header {
   }
 
   nav {
-    display: none;
     position: relative;
+    display: none;
     width: 100%;
     /*  width: max(329px, 87%); */
     margin-top: 26px;
@@ -191,7 +195,6 @@ header {
 }
 
 div.benefits-section {
-  display: grid;
   article {
     text-align: center;
     margin: 64px 24px;
@@ -624,6 +627,34 @@ footer {
       top: 45%;
     }
   }
+}
+
+@media screen and (max-width: 300px) {
+    * {
+        font-size: 12px;
+    }
+    header h1 {
+        font-size: 18px;
+    }
+    section.service article {
+        top: 15%;
+        p, h2 {
+            color: $White;
+        }
+    }
+    .links, .social-links {
+        flex-direction: column;
+    }
+    div.benefits-section {
+        div {
+            article {
+                h2 {
+                    font-size: 18px;
+                }
+            }
+        }
+    
+}
 }
 
 .attribution {
